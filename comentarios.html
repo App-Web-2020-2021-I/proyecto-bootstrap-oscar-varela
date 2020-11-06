@@ -12,6 +12,12 @@
   </head>
   <body>
 
+    <div class="bg-danger collapse" id="men">
+        <a href="index.html"> <li class="list-group-item list-group-item-action">Inicio</li> </a>
+        <a href="catalogo.html">  <li class="list-group-item list-group-item-action">Catalogo</li> </a>
+         <a href="prom.html">  <li class="list-group-item list-group-item-action">Promociones</li> </a>
+    </div>
+
     <div class="bg-success row">
         <div class="col-6 py-3">
             <div class="d-inline-block" id="logo">
@@ -21,6 +27,12 @@
                 bicicletas para ti
             </div>
         </div>
+
+        <div class="d-md-none d-block">
+            <button class="btn" data-toggle="collapse" data-target="#men"> <img src="./imagen/menu.png" alt="Logo" class="w-50"> </button>
+         </div>
+
+
         <div class="d-none d-md-block col-3 p-2">
             <div class="mt-2">
                 <ul class="list-group list-group-horizontal text-center">
@@ -46,14 +58,14 @@
 
     <div class="row">
              <div class="col-2">
-                <a href="javascript: history.go(-1)"><img class="w-50 p-4" src="./imagen/flecha.png"></a>
+                <a href="javascript: history.go(-1)"><img class="w-75 p-md-4" src="./imagen/flecha.png"></a>
              </div>
    
              <div class="text-center col-8 m-4 border">
                 <h1>comentarios</h1>  
 
                 <div class="row p-4">
-                    <textarea class="form-control col-10" placeholder="Comentario"></textarea> 
+                    <textarea class="form-control col-8 col-md-10" placeholder="Comentario"></textarea> 
                     <button class="btn btn-outline-primary col-2 p-3">agregar</button>
                 </div>
                 
@@ -85,8 +97,9 @@
 
     
     <!--d-none d-md-block-->
+    <!--d-none d-md-block-->
     <div class="bg-success  row text-white ">
-        <div class="col-6 my-3" id="redes">
+        <div class="col-4 my-3" id="redes">
 
             <img src="./imagen/facebook.png">
             <img src="./imagen/instagram.png">
@@ -94,8 +107,12 @@
 
             
         </div>
-        <div class="col-6 text-right my-3">
+        <div class="col-4 text-right my-3">
             Conectate con nosotros
+        </div>
+
+        <div>
+            <a href="carrito.html" class="col-5 col-md-4"> <img class="w-50" src="./imagen/carrito.png"></a>
         </div>
     </div>
    <!-- <?php
